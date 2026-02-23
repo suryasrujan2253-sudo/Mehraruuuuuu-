@@ -112,7 +112,13 @@
     color: #ff1493;
 }
 .box__account img {
-    border-radius: 50%;
+    /* Circular Image for girlfriend */
+    width: 120px;        /* adjust size here */
+    height: 120px;       /* keep square */
+    object-fit: cover;   /* fills circle without stretching */
+    border-radius: 50%;  /* makes it circular */
+    border: 4px solid #ff69b4; /* optional pink border */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Balloons */
@@ -210,4 +216,11 @@
 /* Optional: Smooth Scroll/Animation */
 html {
     scroll-behavior: smooth;
+}
+
+/* Optional: Popup letter image styling if added later */
+.imageCute img, .imageCute2 img {
+    width: 100px;
+    display: block;
+    margin: 10px auto;
 }
